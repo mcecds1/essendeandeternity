@@ -205,15 +205,22 @@ body {
 }
 .prev { left: 0; }
 .next { right: 0; }
-
+#flecha-main-img {
+    min-height: 50%;
+    min-width: auto;
+    height: 60%;
+}
 
 /* footer */
 .footer {
     background-color: black;
     border-radius: 20px 20px 0 0;
-    display: flex;
-    padding: 5%;
+    padding: 5% 5% 20px 5%;
     color: white;
+    text-align: center;
+}
+.footer-sect {
+    display: flex;
 }
 .left-footer, .right-footer {
     width: 50%;
@@ -239,4 +246,10 @@ body {
 .areas-footer-right a {
     color: white;
     margin-top: 20px;
+}
+.footer section {
+    color: white;
+}
+.copy {
+    margin-top: 45px;
 }
