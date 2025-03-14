@@ -1,7 +1,25 @@
+/* Animations */
+@keyframes logo-flotando {
+    0% {
+
+    }
+    50% {
+        transform: translateY(-15px);
+        scale: 1.09;
+    }
+    100% {
+
+    }
+}
+
 body {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     margin: 0;
     font-size: 17px;
+}
+input, label, textarea {
+    font-size: 17px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
  section {
     padding: 10px 40px;
@@ -132,6 +150,20 @@ body {
     font-size: 40px;
     color: #9196AA;
 }
+.div-genvm {
+    display: flex;
+}
+.gen-mv {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.image-sect3mv-main {
+    width: 90%;
+    border-radius: 25px;
+}
 
 /* Carrouser de Elementos */
 .sect4-main {
@@ -252,4 +284,95 @@ body {
 }
 .copy {
     margin-top: 45px;
+}
+
+
+
+
+
+
+/* Contacto */
+#main-contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: linear-gradient(#4a7065,  white);
+    padding: 100px 0;
+    margin: 0;
+}
+.form-gen-contact {
+    background-color: white;
+    width: 70%;
+    padding: 50px;
+}
+.form-gen-contact h1 {
+    text-align: center;
+}
+.form-gen-contact label {
+    margin-left: 10px;
+}
+.form-gen-contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.s1-form-contact input {
+    width: 100%;
+}
+.s2-form-contact input, textarea {
+    width: 100%;
+}
+.s2-form-contact {
+    display: flex;
+    align-items: start;
+    margin-top: 25px;
+}
+.form-gen-contact input:focus,
+.form-gen-contact textarea:focus {
+    border-bottom: 1px solid #4A7065;
+}
+.form-gen-contact input, textarea {
+    border: none;
+    border-bottom: 1px solid;
+    outline: none;
+    height: 30px;
+    margin: 10px 0;
+    resize: vertical;
+    transition: 150ms;
+}
+.form-gen-contact textarea {
+    height: 80px;
+}
+form div {
+    width: 90%;
+}
+.form-gen-contact button {
+    padding: 20px 80px;
+    margin: 20px 0;
+    background-color: #4A7065;
+    border: none;
+    border-radius: 30px;
+    color: white;
+    font-weight: 500;
+    font-size: 17px;
+    transition: 150ms;
+}
+.form-gen-contact button:hover {
+    padding: 20px 140px;
+    background-color: black;
+    color: white;
+
+}
+
+/* Boton flotante */
+.boton-flotante-red {
+    width: 80px;
+    height: 80px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+.logo-flotante {
+    height: 100%;
+    animation: logo-flotando 4s infinite;
 }
