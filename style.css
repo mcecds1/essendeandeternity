@@ -54,6 +54,106 @@ input, label, textarea {
     height: 90px;
 }
 
+
+
+/* Header menu */
+/* Menu Hamburger desplegable */
+.menu {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+    z-index: 999;
+}
+
+.menu.open {
+    transform: translateX(0);
+}
+
+.menu .close-btn {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 36px;
+    color: white;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+/* Estilo de las opciones del menú */
+.menu ul {
+    list-style: none;
+    padding: 50px 0 0 0;
+    text-align: center;
+}
+
+.menu ul li {
+    padding: 20px;
+    font-size: 24px;
+    color: white;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: white;
+    display: block;
+}
+
+.menu ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Estilos del botón de las tres barras (hamburguesa) */
+.hamburger {
+    position: absolute;
+    cursor: pointer;
+    font-size: 40px;
+    z-index: 1000;
+}
+.menu-desp {
+    display: none;
+    width: 20%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+}
+
+@media only screen and (max-width: 767px) {
+    .menu-desp {
+        display: flex;
+        align-items: center;
+        width: 20%;
+    }
+    
+    .header-sect2 {
+        display: none;
+    }
+
+    .header {
+        justify-content: space-evenly;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        flex-direction: reverse;
+    }
+    .header-sect1 {
+        width: 70%;
+        align-content: center;
+
+    }
+    .logo-header {
+        width: 100%;
+        height: auto;
+    }
+}
+
+
 /* Main */
 .sect1-main {
     background-image: url(assets/sect1-main.png);
@@ -63,6 +163,7 @@ input, label, textarea {
     background-size: cover;
     align-items: center;
     justify-content: center;
+    background-position: center;
 }
 .sect1-main h2 {
     color: white;
@@ -90,6 +191,11 @@ input, label, textarea {
 .botones-sect1-main:hover {
     padding: 15px 90px;
 }
+@media only screen and (max-width: 767px) {
+    .sect1-main h2 {
+        font-size: 60px;
+    }
+}
 
 .sect2-main {
     background-color: #4A7065;
@@ -107,7 +213,8 @@ input, label, textarea {
     margin: 0;
 }
 .div-sect2-main {
-    width: 50%;    
+    width: 50%;
+    text-align: center;    
 }
 .div2-sect2-main {
     width: 50%;
@@ -136,6 +243,19 @@ input, label, textarea {
     color: black;
     text-decoration: none;
 }
+@media only screen and (max-width:767px) {
+    .sect2-main {
+        flex-direction: column;
+    }
+    .div-sect2-main, .div2-sect2-main {
+        flex-direction: column;
+        width: 100%;
+        margin-top: 15px;
+    }
+    .botones-sect2-main {
+        margin-top: 20px;
+    }
+}
 .sect3-main {
     padding: 10px 180px;
     text-align: center;
@@ -163,6 +283,18 @@ input, label, textarea {
 .image-sect3mv-main {
     width: 90%;
     border-radius: 25px;
+}
+
+@media only screen and (max-width:767px) {
+    .sect3-main {
+        padding: 10px;
+    }
+    .div-genvm {
+        flex-direction: column-reverse;
+    }
+    .gen-mv {
+        width: 100%;
+    }
 }
 
 /* Carrouser de Elementos */
@@ -242,6 +374,11 @@ input, label, textarea {
     min-width: auto;
     height: 60%;
 }
+@media only screen and (max-width:767px) {
+    .carousel-container {
+        width: 95%;
+    }
+}
 
 /* footer */
 .footer {
@@ -286,7 +423,14 @@ input, label, textarea {
     margin-top: 45px;
 }
 
-
+@media only screen and (max-width: 767px ) {
+    .footer-sect {
+        flex-direction: column;
+    }
+    .right-footer, .left-footer {
+        width: 100%;
+    }
+}
 
 
 
