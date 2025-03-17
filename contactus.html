@@ -30,24 +30,27 @@
 <main class="main" id="main-contact">
     <div class="form-gen-contact">
         <h1>NOSOTROS TE LLAMAMOS</h1>
-        <form action="">
+        <form action="https://formsubmit.co/essenceandeternity@gmail.com" method="POST">
             <div class="s1-form-contact">
                 <label for="">Nombre</label>
-                <input type="text" placeholder="Ingresa tu nombre" required>
+                <input name="Name" type="text"  placeholder="Ingresa tu nombre" required>
                 <label for="">Correo Electrónico</label>
-                <input type="email" placeholder="Ingresa tu correo electrónico" required>
+                <input name="Mail" type="email" placeholder="Ingresa tu correo electrónico" required>
             </div>
             <div class="s2-form-contact">
                 <div>
                     <label for="">Número de Teléfono</label>
-                    <input type="number" required placeholder="+502 1234 4321">
+                    <input name="telefono" type="number" required placeholder="+502 1234 4321">
                 </div>
                 <div>
                     <label for="">Mensaje</label>
-                <textarea name="" id="" placeholder="Deja tu mensaje"></textarea>
+                <textarea name="Mesage" id="" placeholder="Deja tu mensaje"></textarea>
                 </div>                
             </div>
-            <button>Enviar</button>
+            <button type="submit">Enviar</button>
+
+            <input type="hidden" name="_next" value="http://127.0.0.1:5500/contactus.html">
+            <input type="hidden" name="_captcha" value="false">
         </form>
     </div>
 </main>
