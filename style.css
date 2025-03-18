@@ -11,6 +11,10 @@
 
     }
 }
+a {
+    text-decoration: none;
+    color: initial;
+}
 
 body {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -143,7 +147,7 @@ input, label, textarea {
         flex-direction: reverse;
     }
     .header-sect1 {
-        width: 70%;
+        width: 60%;
         align-content: center;
 
     }
@@ -403,6 +407,10 @@ input, label, textarea {
 .logo-footer {
     width: 90%;
 }
+#cecade {
+    width: 50%;
+    margin-top: 30px;
+}
 .right-footer {
     flex-direction: row;
 }
@@ -464,12 +472,13 @@ input, label, textarea {
     width: 100%;
 }
 .s2-form-contact input, textarea {
-    width: 100%;
+    width: 90%;
 }
 .s2-form-contact {
     display: flex;
     align-items: start;
     margin-top: 25px;
+    justify-content: space-between;
 }
 .form-gen-contact input:focus,
 .form-gen-contact textarea:focus {
@@ -490,6 +499,9 @@ input, label, textarea {
 form div {
     width: 90%;
 }
+#right-contact textarea {
+    width: 100%;
+}
 .form-gen-contact button {
     padding: 20px 80px;
     margin: 20px 0;
@@ -507,6 +519,18 @@ form div {
     color: white;
 
 }
+@media only screen and (max-width: 767px) {
+    .s2-form-contact {
+        flex-direction: column;
+    }
+    .s2-form-contact div {
+        width: 100%;
+    }
+    #left-contact input {
+        width: 100%;
+        margin-bottom: ;
+    }
+}
 
 /* Boton flotante */
 .boton-flotante-red {
@@ -519,4 +543,81 @@ form div {
 .logo-flotante {
     height: 100%;
     animation: logo-flotando 4s infinite;
+}
+
+
+
+/* Productos */
+#productos h1, h2 {
+    text-align: center;
+}
+#productos {
+    margin: 20px 0  ;
+}
+.element{
+    height: 300px;
+    width: 300px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px;
+    margin: 10px 20px;
+    transition: 150ms;
+    overflow: hidden;
+}
+.element img {
+    height: 100%;
+    min-width: 100%;
+}
+.image-element-products {
+    height: 100%;
+}
+.boxes-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: fit-content;
+    margin: 30px;
+}
+.sect1-products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.sect2-products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.conmas-button-products {
+    padding: 15px 50px;
+    background-color: #9196AA;
+    border-radius: 45px;
+    color: white;
+    font-weight: 500;
+    transition: 150ms;
+}
+.conmas-button-products:hover,
+.conmask-button-products:hover,
+.conmase-button-products:hover {
+    padding: 15px 70px;
+}
+.conmask-button-products {
+    padding: 15px 50px;
+    background-color: #E5DFC9;
+    border-radius: 45px;
+    color: black;
+    font-weight: 500;
+    transition: 150ms;
+}
+.conmase-button-products {
+    background-color: #4A7065;
+    padding: 15px 50px;
+    border-radius: 45px;
+    color: white;
+    font-weight: 500;
+    transition: 150ms;
+}
+
+/* Acerca de */
+#about {
+    margin-bottom: 80px;
 }

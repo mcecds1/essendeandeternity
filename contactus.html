@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,25 +12,45 @@
     <meta property="og:url" content="https://mcecds1.github.io/essendeandeternity">
     <meta property="og:type" content="website">
 
-    <link rel="icon" type="image/png" href="assets/flecha1.png">
+    <link rel="icon" type="image/png" href="assets/icon-ee.png">
 
 </head>
-<header class="header">
-    <div class="header-sect1">
-        <img src="https://cdn.prod.website-files.com/674e048e8284769ff51364fd/674e17b365d6112189f4ea5e_FC_HLOGO.png" class="logo-header">
+<body>
+    
+    <header class="header">
+        <div class="header-sect1">
+            <img src="assets/LogoEssence.png" class="logo-header">
+        </div>
+        <div class="header-sect2">
+            <a href="index.html" class="header-links">Inicio</a>
+            <a href="productos.html" class="header-links">Productos</a>
+            <a href="sobre.html" class="header-links">Acerca de</a>
+            <a href="contactus.html" class="header-links">Contacto</a>
+        </div>
+    
+         <!-- Menu despl -->
+         <div class="menu-desp">
+            <!-- Botón de las tres barras (hamburguesa) -->
+    <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+    
+        <!-- Menú desplegable -->
+    <div class="menu" id="menu">
+        <button class="close-btn" onclick="toggleMenu()">X</button>
+        <ul>
+            <li><a href="index.html">INICIO</a></li>
+            <li><a href="productos.html">PRODUCTOS</a></li>
+            <li><a href="Sobre.html">ACERCA DE</a></li>
+            <li><a href="contactus.html">CONTACTO</a></li>
+        </ul>
     </div>
-    <div class="header-sect2">
-        <a href="index.html" class="header-links">Inicio</a>
-        <a href="productos.html" class="header-links">Productos</a>
-        <a href="acerca.html" class="header-links">Acerca de</a>
-        <a href="contactus.html" class="header-links">Contacto</a>
-    </div>
-</header>
+        </div>
+        
+    </header>
 
 <main class="main" id="main-contact">
     <div class="form-gen-contact">
         <h1>NOSOTROS TE LLAMAMOS</h1>
-        <form action="https://formsubmit.co/essenceandeternity@gmail.com" method="POST">
+        <form class="form-contact" action="https://formsubmit.co/essenceandeternity@gmail.com" method="POST">
             <div class="s1-form-contact">
                 <label for="">Nombre</label>
                 <input name="Name" type="text"  placeholder="Ingresa tu nombre" required>
@@ -38,18 +58,18 @@
                 <input name="Mail" type="email" placeholder="Ingresa tu correo electrónico" required>
             </div>
             <div class="s2-form-contact">
-                <div>
+                <div id="left-contact">
                     <label for="">Número de Teléfono</label>
                     <input name="telefono" type="number" required placeholder="+502 1234 4321">
                 </div>
-                <div>
+                <div id="right-contact">
                     <label for="">Mensaje</label>
                 <textarea name="Mesage" id="" placeholder="Deja tu mensaje"></textarea>
                 </div>                
             </div>
             <button type="submit">Enviar</button>
 
-            <input type="hidden" name="_next" value="http://127.0.0.1:5500/contactus.html">
+            <input type="hidden" name="_next" value="http://mcecds1.github.io/essendeandeternity/contactus.html">
             <input type="hidden" name="_captcha" value="false">
         </form>
     </div>
@@ -59,17 +79,18 @@
     <section class="footer-sect">
 
     <div class="left-footer">
-        <img src="assets/logowhite.png" class="logo-footer">
+        <img src="assets/LogoWhiteEssence.png" class="logo-footer">
+        <img src="assets/logowhite.png" class="logo-footer" id="cecade">
        
     </div>
 
     <div class="right-footer">
         <div class="areas-footer-right">
             <h3>PÁGINAS</h3>
-                <a href="index.html" class="header-links">Inicio</a>
-                <a href="productos.html" class="header-links">Productos</a>
-                <a href="acerca.html" class="header-links">Acerca de</a>
-                <a href="contactus.html" class="header-links">Contacto</a>
+                <a href="" class="header-links">Inicio</a>
+                <a href="" class="header-links">Productos</a>
+                <a href="" class="header-links">Acerca de</a>
+                <a href="" class="header-links">Contacto</a>
 
         </div>
         <div class="areas-footer-right">
@@ -86,8 +107,8 @@
 </footer>
 
 <div class="boton-flotante-red">
-    <a href=""><img src="assets/whatsapp.png" class="logo-flotante"></a>
+    <a target="_blank" href="https://api.whatsapp.com/send?phone=50241830377&text=Hola%20buenas%20tardes%2C%20me%20gustar%C3%ADa%20obtener%20m%C3%A1s%20informaci%C3%B3n."><img src="assets/whatsapp.png" class="logo-flotante"></a>
 </div>
-
+</body>
 <script src="scripts.js"></script>
 </html>
